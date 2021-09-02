@@ -12,10 +12,10 @@ for (let i=0; i<4; i++) {
 
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5
 //   - Which part of the example loop do you need to change to do this?
-// change i to less than 5.
+// change i to less than or equal to 5.
 console.log('count from 0 to 5');
 
-for (let i=0; i<5; i++){
+for (let i=0; i<=5; i++){
   console.log(i);
 }
 
@@ -23,7 +23,7 @@ for (let i=0; i<5; i++){
 //   - Which part of the example loop do you need to change to do this?
 // one way is to have i start at 3 instead of 0. Right?
 console.log('count from 3 to 5');
-for (let i=3; i<5; i++){
+for (let i=3; i<=5; i++){
   console.log(i);
 }
 
@@ -32,7 +32,7 @@ for (let i=3; i<5; i++){
 // increase the index to 10, and add an if to check for evenness.
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 
-for (let i=0; i<10; i++){
+for (let i=2; i<=10; i++){
   if(i%2 ===0){
     console.log(i);
   }
@@ -42,7 +42,7 @@ for (let i=0; i<10; i++){
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
 
-for (let i=5; i--;){
+for (let i=5; i>=0; i--){
   console.log(i);
 }
 
@@ -75,7 +75,7 @@ while(count<stars.length){
 console.log('count from 0 to 5');
 
 let countNum=0
-while(countNum < 5){
+while(countNum <=5){
   console.log(' while loop numbers', countNum);
   countNum++;
 }
@@ -84,7 +84,7 @@ while(countNum < 5){
 console.log('count backwards from 10 to 5');
 
 let t=10
-while(t>5){
+while(t>=5){
   console.log('while looping decrementing from 10', t);
   t--;
 }
